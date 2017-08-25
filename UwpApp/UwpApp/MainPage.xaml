@@ -9,22 +9,24 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-178,-174,-172,-475" RenderTransformOrigin="0.505,0.807" Height="1369" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="1630">
         <Button x:Name="num0" FontSize="50" Content="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="448,748,916,523" Height="98" Width="266" Click="num0_Click"/>
-        <Button FontSize="50" Content="." HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="719,748,779,523" Height="98" Width="132"/>
-        <Button FontSize="50" Content="+" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="857,748,641,523" Height="98" Width="132"/>
-        <Button FontSize="50" Content="=" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,502,523" Width="132" Height="201"/>
+        <Button x:Name="dot" FontSize="50" Content="." HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="719,748,779,523" Height="98" Width="132" Click="dot_Click"/>
+        <Button x:Name="plusbutton" FontSize="50" Content="+" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="857,748,641,523" Height="98" Width="132" Click="plusbutton_Click"/>
+        <Button x:Name="equalbutton" FontSize="50" Content="=" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,502,523" Width="132" Height="201" Click="equalbutton_Click"/>
         <Button x:Name="num1" FontSize="50" Content="1" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="448,645,1050,626" Height="98" Width="132" Click="num1_Click"/>
         <Button x:Name="num2" FontSize="50" Content="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="585,645,916,626" Height="98" Width="129" Click="num2_Click"/>
         <Button x:Name="num3" FontSize="50" Content="3" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,779,626" Height="98" Width="132" Click="num3_Click"/>
-        <Button FontSize="50" Content="-" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,641,626" Height="98" Width="132"/>
-        <Button FontSize="50" Content="*" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,641,729" Height="98" RenderTransformOrigin="0.479,1.069" Width="132"/>
+        <Button x:Name="minusbutton" FontSize="50" Content="-" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,641,626" Height="98" Width="132" Click="minusbutton_Click"/>
+        <Button x:Name="multiply" FontSize="50" Content="*" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,641,729" Height="98" RenderTransformOrigin="0.479,1.069" Width="132" Click="multiply_Click"/>
+        <Button x:Name="percent" FontSize="50" Content="%" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,502,729" Height="98" RenderTransformOrigin="0.479,1.069" Width="132" Click="percent_Click"/>
         <Button x:Name="num6" FontSize="50" Content="6" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,779,729" Height="98" Width="132" RenderTransformOrigin="0.479,1.069" Click="num6_Click"/>
         <Button x:Name="num5" FontSize="50" Content="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="585,542,916,729" Height="98" Width="129" RenderTransformOrigin="0.479,1.069" Click="num5_Click"/>
         <Button x:Name="num4" FontSize="50" Content="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="448,542,1050,729" Height="98" Width="132" RenderTransformOrigin="0.479,1.069" Click="num4_Click"/>
         <Button x:Name="num7" FontSize="50" Content="7" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Margin="448,0,0,832" RenderTransformOrigin="0.479,1.069" Click="num7_Click" Height="98" Width="132"/>
         <Button x:Name="num8" FontSize="50" Content="8" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Margin="0,0,916,832" RenderTransformOrigin="0.479,1.069" Height="98" Width="129" Click="num8_Click"/>
         <Button x:Name="num9" FontSize="50" Content="9" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="719,439,779,832" Height="98" Width="132" RenderTransformOrigin="0.479,1.069" Click="num9_Click"/>
-        <Button FontSize="50" Content="/" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="857,439,641,832" Height="98" Width="132" RenderTransformOrigin="0.479,1.069"/>
+        <Button x:Name="divide" FontSize="50" Content="/" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="857,439,641,832" Height="98" Width="132" RenderTransformOrigin="0.479,1.069" Click="divide_Click"/>
         <TextBox x:Name="textbox1" TextAlignment="Right" FontSize="80" Margin="448,0,502,950" TextWrapping="Wrap" Text="  " VerticalAlignment="Bottom" Height="170" Grid.ColumnSpan="3"/>
-        <Button Content="Hello" Margin="996,439,0,729" Height="201" Width="132" Click="Button_Click"/>
+        <Button Content="C" FontSize="50" Margin="996,439,0,832" Height="98" Width="132" Click="Button_Click"/>
+        
     </Grid>
 </Page>
